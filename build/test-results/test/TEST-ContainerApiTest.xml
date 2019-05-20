@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContainerApiTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-05-20T02:38:22" hostname="Hanss-MBP.lan" time="5.019">
+  <properties/>
+  <testcase name="deleteContainerSignatureTest" classname="ContainerApiTest" time="4.043"/>
+  <testcase name="signContainerTest" classname="ContainerApiTest" time="0.912"/>
+  <testcase name="readContainerTest" classname="ContainerApiTest" time="0.042"/>
+  <testcase name="createContainerTest" classname="ContainerApiTest" time="0.021"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] WARN com.guardtime.ksi.pdu.v2.PduV2 - Non-pushable payload with type=0x2 encountered
+[Test worker] WARN com.guardtime.ksi.pdu.v2.PduV2 - Non-pushable payload with type=0x2 encountered
+[Test worker] INFO com.guardtime.ksi.unisignature.verifier.KSISignatureVerifier - Starting to verify signature com.guardtime.ksi.unisignature.inmemory.InMemoryKsiSignature@4ea3b49f using policy Internal verification policy
+java.io.UncheckedIOException: java.nio.file.NoSuchFileException: /META-INF/manifest2.tlv
+	at java.base/java.nio.file.FileTreeIterator.fetchNextIfNeeded(FileTreeIterator.java:87)
+	at java.base/java.nio.file.FileTreeIterator.hasNext(FileTreeIterator.java:103)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:132)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at com.guardtime.assignment.ContainerApi.delete(ContainerApi.java:235)
+	at ContainerApiTest.deleteContainerSignatureTest(ContainerApiTest.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.nio.file.NoSuchFileException: /META-INF/manifest2.tlv
+	at jdk.zipfs/jdk.nio.zipfs.ZipPath.getAttributes(ZipPath.java:729)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.readAttributes(ZipFileSystemProvider.java:290)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1840)
+	at java.base/java.nio.file.FileTreeWalker.getAttributes(FileTreeWalker.java:219)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:276)
+	at java.base/java.nio.file.FileTreeWalker.next(FileTreeWalker.java:373)
+	at java.base/java.nio.file.FileTreeIterator.fetchNextIfNeeded(FileTreeIterator.java:83)
+	... 59 more
+[Test worker] INFO com.guardtime.ksi.unisignature.verifier.KSISignatureVerifier - Starting to verify signature com.guardtime.ksi.unisignature.inmemory.InMemoryKsiSignature@df24f013 using policy Internal verification policy
+[Test worker] WARN com.guardtime.ksi.pdu.v2.PduV2 - Non-pushable payload with type=0x2 encountered
+[Test worker] INFO com.guardtime.ksi.unisignature.verifier.KSISignatureVerifier - Starting to verify signature com.guardtime.ksi.unisignature.inmemory.InMemoryKsiSignature@666fe048 using policy Internal verification policy
+]]></system-err>
+</testsuite>
